@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Route, NavLink} from 'react-router-dom'
+import {Route, NavLink, Switch} from 'react-router-dom'
 import './App.css'
 
 class App extends Component {
@@ -17,7 +17,10 @@ class App extends Component {
 					</li>
 				</ul>
 
-				<Route path="/github" render={() => <h1>GitHub!</h1>}/>
+				<Switch>
+					<Route path="/github" render={() => <h1>GitHub!</h1>}/>
+					<Route/> {/* no path means default case*/}
+				</Switch>
 			</div>
 		)
 	}
