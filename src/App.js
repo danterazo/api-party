@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Route, NavLink, Switch} from 'react-router-dom'
 import Github from './Github'
+import Homework from './Homework'
 
 import './App.css'
 
@@ -16,6 +17,9 @@ class App extends Component {
 				<ul className="navLinks">
 					<li>
 						<NavLink to="/github">GitHub API</NavLink>
+					</li>
+					<li>
+
 					</li>
 				</ul>
 
